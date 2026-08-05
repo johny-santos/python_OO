@@ -47,7 +47,7 @@ class CarrinhoCompras:
         else:
             print("\nProdutos no carrinho:\n")
             for produto in self.produtos:
-                print(f"Produto: {produto.get_nome()} | Preço: R$ {produto.get_preco():.2f} | Quantidade: {produto.get_quantidade()}")
+                print(f"| Produto: {produto.get_nome()} | Preço: R$ {produto.get_preco():.2f} | Quantidade: {produto.get_quantidade()} |")
 
     def calcular_total(self):
         total = 0
@@ -57,6 +57,7 @@ class CarrinhoCompras:
 
 def main():
     carrinho = CarrinhoCompras()
+
     while True:
         print("\n=================Menu Carrinho=====================\n")
         print("1 - Adicionar produto")
