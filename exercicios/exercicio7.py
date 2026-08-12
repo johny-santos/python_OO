@@ -69,7 +69,7 @@ def main():
             
         elif opcao == "2":
             if casa is None:
-                print("\nCriea casa primeiro, por favor!\n")
+                print("\nCria casa primeiro, por favor!\n")
             else:
                 nome = input("\nNome do cômodo: \n")
                 area =  float(input("\náreado cômod em m²: \n"))
@@ -79,14 +79,14 @@ def main():
             
         elif opcao == "3":
             if casa is None:
-                print("\nCriea casa primeiro, por favor!\n")
+                print("\nCria casa primeiro, por favor!\n")
             else:
                 casa.listar_comodos()
                         
            
         elif opcao == "4":
             if casa is None:
-                print("\nCriea casa primeiro, por favor!\n")
+                print("\nCria casa primeiro, por favor!\n")
             else:
                 total = casa.calcular_area_total()
                 print(f"Área total da casa em: {total:.2f} (m²)")
